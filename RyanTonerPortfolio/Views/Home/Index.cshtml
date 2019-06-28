@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+
+    <script type="text/javascript">
+        var topnav = document.getElementsByClassName("top-nav");
+        for (var i = 0; i < topnav.length; i++) {
+            topnav[i].classList.remove("selected-navbar");
+        }
+        topnav[0].classList.add("selected-navbar");
+    </script>
+
+}
+
+<div class="text-center">
+    <h1 class="display-3">Welcome to Ryan Toner's Portfolio Page!</h1>
+
+
+
+
+
+
+</div>
+
+
+<div class="container" id="main_info">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+    <div class="row">
+
+        <div class="col-sm-auto">
+            <img id="mainphoto" src="@Url.Content("~/imgs/PrattNASAPoster.png")" width="600" max-width="700" />
+        </div>
+
+        <div class="col">
+
+            <ul class="text-center list-unstyled p-3">
+                <li>Rensselaer Polytechnic Institute</li>
+                <li>B.S. in Computer Science and Mathematics</li>
+            </ul>
+
+            <div class="text-center display-4 p-3">Contact Information</div>
+
+            <ul class="text-center list-unstyled p-3">
+                <li>For employers or recruiters:</li>
+                <li>Email: <a href="mailto:ryanat.per@gmail.com">ryanat.per@gmail.com</a></li>
+                <li>Phone: 203-609-1777</li>
+            </ul>
+
+            <div class="container text-center align-middle">
+
+                <div class="row text-center align-middle">
+                    <div class="col text-center align-middle">
+                        GitHub
+                    </div>
+
+                    <div class="col text-center align-middle">
+                        LinkedIn
+                    </div>
+                </div>
+
+                <div class="row text-center align-middle">
+                    <div class="col text-center align-middle">
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                    </div>
+
+                    <div class="col text-center align-middle">
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
