@@ -1,7 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 
-
     <script type="text/javascript">
         var topnav = document.getElementsByClassName("top-nav");
         for (var i = 0; i < topnav.length; i++) {
@@ -9,32 +8,25 @@
         }
         topnav[0].classList.add("selected-navbar");
     </script>
-
 }
 
 <div class="text-center">
     <h1 class="display-3">Welcome to Ryan Toner's Portfolio Page!</h1>
-
-
-
-
-
-
 </div>
 
 
-<div class="container" id="main_info">
+<div class="container .d-flex" id="main_info">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 
     <div class="row">
 
-        <div class="col-sm-auto">
+        <div class="col-sm-auto mx-auto">
             <img id="mainphoto" src="@Url.Content("~/imgs/PrattNASAPoster.png")" width="600" max-width="700" />
         </div>
 
-        <div class="col">
+        <div class="col-md-auto mx-auto">
 
             <ul class="text-center list-unstyled p-3">
                 <li>Rensselaer Polytechnic Institute</li>
@@ -51,23 +43,23 @@
 
             <div class="container text-center align-middle">
 
-                <div class="row text-center align-middle">
+                <div class="row links text-center align-middle">
                     <div class="col text-center align-middle">
                         GitHub
                     </div>
 
-                    <div class="col text-center align-middle">
+                    <div class="col links text-center align-middle">
                         LinkedIn
                     </div>
                 </div>
 
                 <div class="row text-center align-middle">
                     <div class="col text-center align-middle">
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                        <a href="https://github.com/RyanTonerCode" target="_blank"><i class="fa fa-github fa-3x"></i></a>
                     </div>
 
                     <div class="col text-center align-middle">
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/ryan-toner-203826170/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
                     </div>
                 </div>
 
