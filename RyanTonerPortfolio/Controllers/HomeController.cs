@@ -30,7 +30,7 @@ namespace RyanTonerPortfolio.Controllers
             return View();
         }
 
-        public IActionResult WorkPortfolio()
+        public IActionResult Portfolio()
         {
             return View();
         }

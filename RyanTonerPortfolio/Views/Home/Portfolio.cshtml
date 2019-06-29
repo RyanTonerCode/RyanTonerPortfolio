@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<div class="container-fluid captions text-center justify-content-md-center p-4">
+
+
+    <div class="row justify-content-md-center">
+
+        <div class="col-lg-auto fade-1">
+            <img src="@Url.Content("~/imgs/TTB.png")" height="303" class="hoverable" />
+            <div class="captions">Tic-Tac-Boom</div>
+        </div>
+        <div class="col-lg-auto fade-2">
+
+            <img src="@Url.Content("~/imgs/SHLogo.png")" width="300" class="hoverable-sh" />
+            <div class="captions">Self-Help<br />Open-Source Initiative</div>
+        </div>
+        <div class="col-lg-auto fade-3">
+            <img src="@Url.Content("~/imgs/FAAFlightSim.jpg")" height="300" class="hoverable" />
+            <div class="captions">FAA Collaborative Research</div>
+        </div>
+
+
+    </div>
+
+    <div class="row justify-content-md-center p-4">
+
+        <div class="col-lg-auto fade-4">
+            <img src="@Url.Content("~/imgs/DascPresentation.png")" height="300" class="hoverable" />
+            <div class="captions">36th Digital Avionics<br />Systems Conference</div>
+        </div>
+        <div class="col-lg-auto fade-5">
+
+            <img src="@Url.Content("~/imgs/Assembly.png")" height="300" class="hoverable" />
+            <div class="captions">Assembly Code</div>
+        </div>
+        <div class="col-lg-auto fade-6">
+            <img src="@Url.Content("~/imgs/Latex.png")" height="300" class="hoverable" />
+            <div class="captions">O(n) Multivariable <br /> Derivative Calculator Research</div>
+        </div>
+
+
+    </div>
+
+
+    <br /><br /><br />
+
+
+    Organization:
+
+    Articles
+    Presentations
+    Awards
+    Self-Help Open Source Initative/ guest lecture
+    Projects
+    Games
+
+
+    TOP: Links to fairfield article?
+
+
+</div>
+
+
+<script type="text/javascript">
+    var topnav = document.getElementsByClassName("top-nav");
+    for (var i = 0; i < topnav.length; i++) {
+        topnav[i].classList.remove("selected-navbar");
+    }
+    topnav[2].classList.add("selected-navbar");
+</script>

@@ -60,12 +60,12 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  background-color: lightblue;
-  width: 100%;
-  min-width:1200px;
-  font-size:25px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: linear-gradient(lightblue, white);
+    width: 100%;
+    min-width: 1200px;
+    font-size: 25px;
 }
 .footer {
     position: absolute;
@@ -123,6 +123,102 @@ hr {
     padding-top: 20px;
 }
 
+.hoverable {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    border: 3px solid black;
+    background-color: lightblue;
+}
+
+.hoverable-sh {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    border-radius: 300px 300px;
+    border: 3px solid black;
+    background-color: lightblue;
+}
+
+.hoverable:hover, .hoverable-sh:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
 
 
+.captions {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
 
+
+@keyframes fader {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    animation: fader linear forwards;
+    animation-duration: 2s;
+}
+
+@keyframes light-fader {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.75;
+    }
+}
+
+
+.fade-1 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+}
+
+.fade-2 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+    animation-delay: .2s;
+}
+
+.fade-3 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+    animation-delay: .4s;
+}
+
+.fade-4 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+    animation-delay: .6s;
+}
+
+.fade-5 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+    animation-delay: .8s;
+}
+
+.fade-6 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+}

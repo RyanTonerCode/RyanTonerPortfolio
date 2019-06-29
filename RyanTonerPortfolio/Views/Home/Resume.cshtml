@@ -1,20 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Resume";
-
-    <script type="text/javascript">
-        var topnav = document.getElementsByClassName("top-nav");
-        for (var i = 0; i < topnav.length; i++) {
-            topnav[i].classList.remove("selected-navbar");
-        }
-        topnav[1].classList.add("selected-navbar");
-    </script>
 }
+
+<script type="text/javascript">
+    var topnav = document.getElementsByClassName("top-nav");
+    for (var i = 0; i < topnav.length; i++) {
+        topnav[i].classList.remove("selected-navbar");
+    }
+    topnav[1].classList.add("selected-navbar");
+</script>
 
 <div class="container-fluid text-center p-0">
 
 
-    <object data="@Url.Content("~/res.pdf")" type="application/pdf" height="1200" width="950" style="border:1px solid #666CCC" title="PDF in an i-Frame" frameborder="1" scrolling="auto">
-        <a href="@Url.Content("~/res.pdf")" target="_blank" type="application/pdf">Cannot display in this browser, click to open here.</a>
+    <object id="resumepdf" data="@Url.Content("~/res.pdf")" type="application/pdf" height="1200" width="950" style="border:1px solid #666CCC" title="PDF in an i-Frame" frameborder="1" scrolling="auto">
+        <div class="display-2"><a href="@Url.Content("~/res.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></div>
     </object>
 
 
