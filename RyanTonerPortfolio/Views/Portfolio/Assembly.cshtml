@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Assembly";
+}
+
+<div class="text-center p-3">
+    <img class="img-responsive" src="@Url.Content("~/imgs/interpreter.png")" width="500" />
+</div>
+
+<h1 class="display-4 text-center">Assembly Code, MIPS Interpreter, and Fractals</h1>
+
+<div id="assembly" class="container p-lg-3 text-justify">
+
+
+    <div class="assemdesc p-0">
+
+        Although the majority of the code I write is using high-level languages, I have come to enjoy working at the assembly level.
+
+        I was the project leader and system designer for a MIPS Execution and Pipeline simulator for a Computer Organization course.
+
+        In this role, I broke the interpreter into a procedural algorithm that read the 32-bit MIPS instruction set and executed it on a simulated architecture in C++.
+
+        This particular algorithm at the high level design took MIPS code, placed it onto the pipeline, parsed the instructions, checked for data and control hazards, and finally executed the result all corresponding to the simulated RISC pipeline.
+
+        I took the initiative to walk the team through the system design and delegate roles and tasks to optimize our workload. I created and managed a <a href="https://github.com/RyanTonerCode/CompOrgMipsSimulatorFinalProject" target="_blank">GitHub</a> repository for this project which you can explore.
+
+        To take this project further, I also created a separate tree in which I simulated the system call operations in assembly.
+    </div>
+
+    <hr />
+
+</div>
+
+<div class="container text-center">
+
+    <div class="assemdesc p-0 text-left">
+
+        One assembly challenge I wanted to explore was efficient fractal generation only using assembly. For the purposes of showing the fractal, I am using system print calls which is the least efficient operation.
+        I used Stephen Wolfram's work on cellular automatons, and specifically coded rule 90 to iteratively generate the fractal.
+        The source code can be found on <a href="https://github.com/RyanTonerCode/MipsSierpinski/blob/master/Sierpinski.s" target="_blank">GitHub</a>.
+    </div>
+
+    <div class="text-center p-0 m-0">
+        <img src="@Url.Content("~/imgs/triangle.png")" width="500" />
+    </div>
+
+    <hr />
+
+</div>
+
+
+
+<div class="container text-center">
+
+    <div class="assemdesc p-0 text-left">
+
+        Since I found working on assembly highly rewarding, I undertook the challenge of teaching high school students an operative understanding and writing their own assembly code in only 2 weeks.
+        Here is a few sample components of the lectures, problems, and resources I delivered to the students. Much of the lecturing was done interactively, especially demoing the usage of the QtSpim simulator.
+
+    </div>
+
+    <h1 class="display-4">Assembly Lecture</h1>
+    <object data="@Url.Content("~/assembly.pdf")" type="application/pdf" height="600" width="950" style="border:1px solid #666CCC" title="Assembly Lecture" frameborder="1" scrolling="auto">
+        <div class="display-2"><a href="@Url.Content("~/assembly.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></div>
+    </object>
+
+    <h1 class="display-4">In-Depth Bitwise Operations</h1>
+    <object data="@Url.Content("~/BitExplore.pdf")" type="application/pdf" height="1050" width="950" style="border:1px solid #666CCC" title="Bit Exploration" frameborder="1" scrolling="auto">
+        <div class="display-2"><a href="@Url.Content("~/BitExplore.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></div>
+    </object>
+
+    <h1 class="display-4">Reverse Engineering Challenge</h1>
+    <object data="@Url.Content("~/Challenge.pdf")" type="application/pdf" height="1200" width="950" style="border:1px solid #666CCC" title="Reverse Engineering" frameborder="1" scrolling="auto">
+        <div class="display-2"><a href="@Url.Content("~/Challenge.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></div>
+    </object>
+
+</div>
+
+

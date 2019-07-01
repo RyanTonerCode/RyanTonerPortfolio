@@ -13,7 +13,7 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />'
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
     </environment>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -21,28 +21,28 @@
 </head>
 <body>
     <header>
-         <nav class="navbar navbar-expand navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-             <div class="container">
-                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                     <ul class="navbar-nav flex-grow-1">
-                         <li class="nav-item top-nav" id="nav1">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Homepage</a>
-                         </li>
-                         <li class="nav-item top-nav" id="nav2">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Resume">Resume</a>
-                         </li>
-                         <li class="nav-item top-nav" id="nav3">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Portfolio">Portfolio</a>
-                         </li>
-                         <li class="nav-item top-nav" id="nav4">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Skills">Skills</a>
-                         </li>
-                         <li class="nav-item top-nav" id="nav5">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
+        <nav class="navbar navbar-expand navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item top-nav" id="nav1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Homepage</a>
+                        </li>
+                        <li class="nav-item top-nav" id="nav2">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Resume">Resume</a>
+                        </li>
+                        <li class="nav-item top-nav" id="nav3">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item top-nav" id="nav4">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Skills">Skills</a>
+                        </li>
+                        <li class="nav-item top-nav" id="nav5">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="container-fluid">
@@ -77,10 +77,9 @@
                 integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
         </script>
     </environment>
-    <script src="~/js/site.js" asp-append-version="true">
-
-
-    </script>
+    <!--
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    -->
 
     @RenderSection("Scripts", required: false)
 </body>

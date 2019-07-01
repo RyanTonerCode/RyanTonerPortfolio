@@ -28,6 +28,7 @@ a.navbar-brand {
 -------------------------------------------------- */
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 @media (min-width: 768px) {
   html {
@@ -99,15 +100,20 @@ container {
     border: 2px solid #021a40;
 }
 
-#skills {
+#skills, #selfhelp, #TTB, #assembly, #faa {
     font-size: 22px;
     line-height: 40px;
+}
+
+.assemdesc {
+    font-size: 28px;
+    line-height: 50px;
 }
 
 #mainphoto {
     border: 2px solid #021a40;
     max-width: 700px;
-    margin:auto;
+    margin: auto;
 }
 
 .footer{
@@ -179,6 +185,14 @@ hr {
     to {
         opacity: 0.75;
     }
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.fade-1:hover, .fade-2:hover, .fade-3:hover, .fade-4:hover, .fade-5:hover, .fade-6:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
