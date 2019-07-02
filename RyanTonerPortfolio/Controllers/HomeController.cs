@@ -8,7 +8,7 @@ using RyanTonerPortfolio.Models;
 
 namespace RyanTonerPortfolio.Controllers
 {
-    public class HomeController : Controller
+    public class Home : Controller
     {
         public IActionResult Index()
         {

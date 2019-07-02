@@ -8,39 +8,9 @@ using RyanTonerPortfolio.Models;
 
 namespace RyanTonerPortfolio.Controllers
 {
-    public class Portfolio : Controller
+    public class Resume : Controller
     {
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult SelfHelp()
-        {
-            return View();
-        }
-
-        public IActionResult TicTacBoom()
-        {
-            return View();
-        }
-
-        public IActionResult Assembly()
-        {
-            return View();
-        }
-
-        public IActionResult DASC()
-        {
-            return View();
-        }
-
-        public IActionResult FAA()
-        {
-            return View();
-        }
-
-        public IActionResult Derivative()
         {
             return View();
         }

@@ -1,34 +1,33 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
+.navbar-item{
+    margin-right: 8px;
 }
 
-.nav-item {
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    
-}
-
-.selected-navbar {
+.active {
     font-weight: bold;
-    font-size: 38px;
+    color: white;
+    background-color: lightblue;
 }
+
+.navbar li a:hover {
+    color: white !important;
+    text-decoration: underline !important;
+    background-color: royalblue;
+    border-radius: 30px;
+}
+
 
 .links {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
     font-size: 14px;
-    scroll-behavior: smooth;
 }
 @media (min-width: 768px) {
   html {
@@ -57,13 +56,14 @@ button.accept-policy {
 html {
     position: relative;
     min-height: 100%;
-
 }
 
 body {
+    margin-top: 75px;
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-image: linear-gradient(lightblue, white);
+    /*background-image: linear-gradient(lightblue, white);*/
+    background-color: #E6ECF0;
     width: 100%;
     min-width: 1200px;
     font-size: 25px;
@@ -236,3 +236,4 @@ hr {
     animation-duration: 1.5s;
     animation-delay: 1s;
 }
+
