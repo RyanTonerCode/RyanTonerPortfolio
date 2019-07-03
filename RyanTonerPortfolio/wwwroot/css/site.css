@@ -1,14 +1,55 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-.navbar-item{
-    margin-right: 8px;
+#mainphoto{
+    border-radius: 50%;
+    border: 3px solid lightblue;
 }
+
+.slide {
+    position: relative;
+    top: -100px;
+    -webkit-animation: slide 0.5s forw ards;
+    -webkit-animation-delay: 2.3s;
+    animation: slide 0.4s forwards;
+    animation-delay: .1s;
+}
+
+.blog-link, .blog-link:hover{
+    text-decoration: none;
+}
+
+.about{
+    line-height:  160% !important;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        top: 0;
+        visibility: visible;
+        z-index: 10;
+    }
+}
+
+#contact {
+    visibility: hidden;
+}
+
 
 .active {
     font-weight: bold;
-    color: white;
+    color: gray !important;
     background-color: lightblue;
+}
+
+.navbar li a{
+    color: black !important;
 }
 
 .navbar li a:hover {
@@ -46,11 +87,6 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -62,12 +98,13 @@ body {
     margin-top: 75px;
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    /*background-image: linear-gradient(lightblue, white);*/
     background-color: #E6ECF0;
     width: 100%;
     min-width: 1200px;
     font-size: 25px;
+    line-height: 30px;
 }
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -79,25 +116,8 @@ body {
     font-size: 15px;
 }
 
-.header{
-    margin: auto;
-    text-align: center;
-}
-
 container {
     font-size: 15px;
-}
-
-
-#main_info {
-    background-color: #E8A87C;
-    max-width: 90%;
-    padding-left: 0px;
-    margin: auto;
-    margin-top: 50px;
-    font-size: 26px;
-    font-family: 'Roboto', sans-serif;
-    border: 2px solid #021a40;
 }
 
 #skills, #selfhelp, #TTB, #assembly, #faa {
@@ -108,12 +128,6 @@ container {
 .assemdesc {
     font-size: 28px;
     line-height: 50px;
-}
-
-#mainphoto {
-    border: 2px solid #021a40;
-    max-width: 700px;
-    margin: auto;
 }
 
 .footer{
@@ -130,14 +144,14 @@ hr {
 }
 
 .hoverable {
-    opacity: 0.7;
+    opacity: 1.0;
     transition: opacity 0.5s;
     border: 3px solid black;
     background-color: lightblue;
 }
 
 .hoverable-sh {
-    opacity: 0.7;
+    opacity: 1.0;
     transition: opacity 0.5s;
     border-radius: 300px 300px;
     border: 3px solid black;
@@ -159,6 +173,15 @@ hr {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    color: white;
+}
+
+.blurb {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    color: black;
 }
 
 
@@ -174,7 +197,8 @@ hr {
 
 .fade {
     animation: fader linear forwards;
-    animation-duration: 2s;
+    animation-duration: 1s;
+    animation-delay: .3s;
 }
 
 @keyframes light-fader {
@@ -183,7 +207,7 @@ hr {
     }
 
     to {
-        opacity: 0.75;
+        opacity: 1;
     }
 }
 
@@ -192,7 +216,7 @@ hr {
 }
 
 .fade-1:hover, .fade-2:hover, .fade-3:hover, .fade-4:hover, .fade-5:hover, .fade-6:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
