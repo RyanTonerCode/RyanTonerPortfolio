@@ -11,6 +11,9 @@
 *.sln.docstates
 *.mp4
 
+MoonlightSonata.mp4
+videos
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
