@@ -23,26 +23,49 @@
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 navbar-custom">
-                <div class="container">
+                <div class="container"> 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item nav-custom ml-3 mr-3" id="nav1">
-                                <a class="nav-link text-dark pl-3 pr-3" asp-controller="Home" asp-action="Index">Home</a>
+                            <li class="nav-item nav-custom ml-3 mr-3">
+                                <a class="nav-link pl-3 pr-3" asp-controller="Home" asp-action="Index">Contact</a>
                             </li>
-                            <li class="nav-item nav-custom ml-3 mr-3" id="nav2">
-                                <a class="nav-link text-dark pl-3 pr-3" asp-controller="Resume" asp-action="Index">Resume</a>
+                            <li class="nav-item nav-custom ml-3 mr-3">
+                                <a class="nav-link pl-3 pr-3" asp-controller="Resume" asp-action="Index">Resume</a>
                             </li>
-                            <li class="nav-item nav-custom ml-3 mr-3" id="nav3">
-                                <a class="nav-link text-dark pl-3 pr-3" asp-controller="Portfolio" asp-action="Index">Portfolio</a>
+
+                            <li class="nav-item dropdown ml-0 pl-0">
+                                <div class="row pl-3 pr-3">
+                                    <div class="btn-group dropright">
+                                        <a class="nav-link"
+                                           asp-controller="Portfolio" asp-action="Index">Portfolio
+                                        </a>
+                                        <button type="button" class="btn bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropright</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+
+                                            <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="DASC">36th Digital Avionics Systems Conference</a></li>
+                                            <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="FAA">FAA Collaborative Research</a></li>
+                                            <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="Derivative">Derivative Calculator</a></li>
+                                            <li class="nav-item"><div class="dropdown-divider"></div></li>
+                                            <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="SelfHelp">Self-Help Open Source Initiative</a></li>
+                                            <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="Assembly">Assembly Code, Interpreters, Fractals, and Lecturing</a></li>
+                                            <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="TicTacBoom">Tic-Tac-Boom</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="nav-item nav-custom ml-3 mr-3" id="nav4">
+                            <li class="nav-item nav-custom ml-3 mr-3">
                                 <a class="nav-link text-dark pl-3 pr-3" asp-controller="Skills" asp-action="Index">Skills</a>
                             </li>
-                            <li class="nav-item nav-custom ml-3 mr-3" id="nav5">
+                            <li class="nav-item nav-custom ml-3 mr-3">
+                                <a class="nav-link text-dark pl-3 pr-3" asp-controller="Hobbies" asp-action="Index">Hobbies</a>
+                            </li>
+                            <li class="nav-item nav-custom ml-3 mr-3">
                                 <a class="nav-link text-dark pl-3 pr-3" asp-controller="About" asp-action="Index">About</a>
                             </li>
                         </ul>
@@ -53,18 +76,17 @@
     </header>
 
     <div class="container-fluid">
-        <div class="col-3"> </div>
         <main role="main" class="container">
             @RenderBody()
         </main>
-        <div class="col-3"> </div>
     </div>
 
     <footer class="border-top footer text-center text-muted">
         <div class="container">
-            &copy; 2019 - Ryan Toner Portfolio -
-            &nbsp; <a href="https://www.linkedin.com/in/ryan-toner-203826170/">LinkedIn</a>
-            &nbsp; <a href="https://github.com/RyanTonerCode">GitHub</a>
+            &copy; 2019 - <a target="_blank" href="http://ryantonerportfolio.net">Ryan Toner Portfolio</a> -
+            <a href="mailto:ryanat.per@gmail.com">ryanat.per@gmail.com</a> -
+            <a target="_blank" href="https://www.linkedin.com/in/ryan-toner-203826170/">LinkedIn</a> -
+            <a target="_blank" href="https://github.com/RyanTonerCode">GitHub</a>
         </div>
     </footer>
 

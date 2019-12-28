@@ -44,21 +44,26 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .active {
     font-weight: bold;
-    color: gray !important;
-    background-color: lightblue;
+    color: white !important;
+    background-color: royalblue;
 }
+
+.navbar li a.active {
+    color: white !important;
+}
+
 
 .navbar li a{
     color: black !important;
+    font-size: 28px !important;
 }
 
 .navbar li a:hover {
     color: white !important;
     text-decoration: underline !important;
-    background-color: royalblue;
-    border-radius: 30px;
+    background-color: #007BFF;
+    border-radius: 10px;
 }
-
 
 .links {
     font-family: 'Montserrat', sans-serif;
@@ -102,7 +107,7 @@ body {
     width: 100%;
     min-width: 1200px;
     font-size: 25px;
-    line-height: 30px;
+    line-height: 150%;
 }
 
 .footer {
@@ -120,9 +125,9 @@ container {
     font-size: 15px;
 }
 
-#skills, #selfhelp, #TTB, #assembly, #faa {
-    font-size: 22px;
-    line-height: 40px;
+#skills, #hobbies, #tea, #TTB, #assembly, #faa, #selfhelp {
+    font-size: 25px;
+    line-height: 190%;
 }
 
 .assemdesc {
@@ -180,6 +185,14 @@ hr {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    line-height: 150%;
+    color: black;
+}
+
+.maincaption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
     line-height: 150%;
     color: black;
 }
@@ -261,3 +274,8 @@ hr {
     animation-delay: 1s;
 }
 
+
+.modal-lg {
+    width: 900px;
+    height: 900px; /* control height here */
+}

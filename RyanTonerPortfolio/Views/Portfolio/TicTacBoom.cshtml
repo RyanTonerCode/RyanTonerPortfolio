@@ -2,42 +2,44 @@
     ViewData["Title"] = "Tic-Tac-Boom";
 }
 
+    <div id="TTB" class="container p-lg-2 text-justify">
 
-<div id="TTB" class="container p-lg-2 text-justify">
+
+        <h1 class="display-4 mb-4">What is Tic-Tac-Boom?</h1>
+
+        Tic-Tac-Boom is an original twist on two classic games: Microsoft Minesweeper and Ultimate Tic-Tac-Toe.
+
+        Tic-Tac-Boom came about when I began revealing to myself the importance of class level code and began devising unique applications for classes and class hierarchies.
+
+        I realized that ultimate Tic-Tac-Toe itself had a unique recursive property which is that you are playing multiple sub-games within the larger meta-game.
+
+        And thus out of pure curiosity, I had the machination to extend this idea to run 9 independent minesweeper games inside of a Tic-Tac-Toe grid.
+
+        I wrote this as my first complete Java project in 11th grade while independently learning Java & Swing, and pushing my understanding of algorithms.
+
+        This project compelled me to pool my limited knowledge from game development and advanced coding to make an interesting, dynamic game that was engaging to play.
 
 
-<a href="http://localhost:8080/tictacboom/" target="_blank">Thing</a>
+        <h1 class="display-4 mb-4 mt-4">Gameplay Mechanics</h1>
 
-<h1 class="display-4">What is Tic-Tac-Boom?</h1>
+        Players take turns in attempting to win a classic Tic-Tac-Toe game, trying to gain a spot by solving Minesweeper boards. The layout is in a 3x3 grid of independent minesweeper boards that both players are competing on, and first the player to completely solve the shared minesweeper board wins a slot. If a player manages to get 3 in a row in any direction, they win the game.
 
-    Tic-Tac-Boom is an original twist on two classic games: Microsoft Minesweeper and Ultimate Tic-Tac-Toe.
+        Players can also click any board of their choosing, so there are many degrees of freedom per turn. Moves consist of clicking a tile, flagging a tile, and also middle clicking - which will auto-click all surrounding tiles if the correct number of flags are placed.
 
-    Tic-Tac-Boom came about when I began revealing to myself the importance of class level code and began devising unique applications for classes and class hierarchies.
+        A feature of typical gameplay is that players can either work together to solve the puzzles, or they can false-flag, and strategically attempt to disrupt the other players game in an effort to win a board.
 
-    I realized that ultimate Tic-Tac-Toe itself had a unique recursive property which is that you are playing multiple sub-games within the larger meta-game.
-        
-    And thus out of pure curiosity, I had the machination to extend this idea to run 9 independent minesweeper games inside of a Tic-Tac-Toe grid.
+        <h1 class="display-4  mb-4 mt-4">
+            Project Accomplishments
+        </h1>
 
-    I wrote this as my first complete Java project in 11th grade while independently learning Java & Swing, and pushing my understanding of algorithms.
+        <ul class="list p-3">
+            <li>
+                A key learning experience for me was designing efficient subroutines for the various types of clicking functionality in the game.
+                In particular, the middle click functionality had me exploring the graph theory of neighboring vertices and efficient ways to visit neighbors, so I devised an efficient indirect recursive method to perform the middle click action of continuously clicking neighboring tiles with the correct number of flags with respect to their neighbors.
+            </li>
+            <li>When I completed the game, I submitted a commentated video of it to the Congressional App Challenge under my senator and received a certificate of recognition for the work.</li>
+            <li>I am sharing this project on my portfolio because I feel it exemplifies my code journey and a quirky side of the way I enjoy learning through exploring ideas at whim.</li>
+        </ul>
 
-    This project forced me to pool my limited knowledge from game development and advanced coding to make an interesting, dynamic game that was engaging to play.
+    </div>
 
-<h1 class="display-4">Gameplay Mechanics</h1>
-
-    Players take turns in attempting to win a classic Tic-Tac-Toe game, trying to gain a spot by solving Minesweeper boards. The layout is in a 3x3 grid of independent minesweeper boards that both players are competing on, and first the player to completely solve the shared minesweeper board wins a slot. If a player manages to get 3 in a row in any direction, they win the game.
-
-    Players can also click any board of their choosing, so there are many degrees of freedom per turn. Moves consist of clicking a tile, flagging a tile, and also middle clicking - which will auto-click all surrounding tiles if the correct number of flags are placed.
-        
-    A feature of typical gameplay is that players can either work together to solve the puzzles, or they can false-flag, and strategically attempt to disrupt the other players game in an effort to win a board.
-
-<h1 class="display-4 p-lg-2">
-        Project Accomplishments
-    </h1>
-<ul class="list p-3">
-<li> A significant challenge at the time was designing efficient subroutines for the various types of clicking functionality in the game.
-        In particular, the middle click functionality got me exploring the Graph Theory of neighboring vertices and efficient ways to visit neighbors, so I devised an efficient indirect recursive method to perform the middle click action of continuously clicking neighboring tiles with the correct number of flags with respect to their neighbors.</li>
-<li>When I completed the game, I submitted a commentated video of it to the Congressional App Challenge under my senator and received a certificate of recognition for the work.</li>
-<li>I am sharing this project on my portfolio because I feel it exemplifies my code journey and a quirky side of the way I enjoy learning through exploring ideas at whim.</li>
-    </ul>
-
-</div>

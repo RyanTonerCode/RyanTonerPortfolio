@@ -2,164 +2,110 @@
     ViewData["Title"] = "Portfolio";
 }
 
-    <div class="container-fluid justify-content-md-center p-3">
-        <a class="blog-link" href='@Url.Action("DASC", "Portfolio")'>
-            <div class="row fade-1 text-center bg-white rounded shadow-lg">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+<div class="container-fluid justify-content-md-center p-3">
+    <a class="blog-link" href='@Url.Action("DASC", "Portfolio")'>
+        <div class="row fade-1 text-center bg-white rounded shadow-lg">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
 
-                    <img src="@Url.Content("~/imgs/DascPresentation.png")" width="300" class="hoverable" />
+                <img class="img-fluid" src="@Url.Content("~/imgs/DascPresentation.png")" height="300" />
 
-                    <div class="captions text-center">DASC 2017</div>
-                </div>
-                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-                    Digital Avionics Systems Conference presenter for <u>Aircraft Conflict Resolution Cataloguer</u>. St. Petersburg, FL September 2017.
-                </div>
+                <div class="captions text-center pt-1">DASC 2017</div>
             </div>
-        </a>
-    </div>
+            <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                Digital Avionics Systems Conference presenter for <u>Aircraft Conflict Resolution Cataloguer</u>. St. Petersburg, FL September 2017.
+            </div>
+        </div>
+    </a>
+</div>
 
-    <br />
+<br />
 
+<a class="blog-link" href='@Url.Action("FAA", "Portfolio")'>
     <div class="row fade-2 text-center bg-white rounded shadow-lg">
+
         <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
             Collaborative Research and Development with the Federal Aviation Administration solving algorithm to reverse engineer aircraft conflict resolutions.
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
-            <a href='@Url.Action("FAA", "Portfolio")'>
-                <img src="@Url.Content("~/imgs/FAAFlightSim.jpg")" width="300" class="hoverable" />
-            </a>
-            <div class="captions text-center">FAA Research</div>
+
+            <img class="img-fluid" src="@Url.Content("~/imgs/FAAFlightSim.jpg")" height="300" />
+
+            <div class="captions text-center pt-1">FAA Research</div>
         </div>
+
     </div>
+</a>
 
-    <br />
-
+<br />
+<a class="blog-link" href='@Url.Action("Derivative", "Portfolio")'>
     <div class="row fade-3 text-center bg-white rounded shadow-lg">
+
         <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
-            <a href='@Url.Action("Derivative", "Portfolio")'>
-                <img src="@Url.Content("~/imgs/Latex.png")" width="300" class="hoverable" />
-            </a>
-            <div class="captions text-center">Derivative Calculator</div>
+
+            <img class="img-fluid" src="@Url.Content("~/imgs/Latex.png")" height="300" />
+
+            <div class="captions text-center pt-1">Derivative Calculator</div>
         </div>
         <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
             Learn more about my research creating an original algorithm solving multivariable symbolic differentiation in O(n) time.
         </div>
+
     </div>
+</a>
 
-    <br />
+<br />
 
+<a class="blog-link" href='@Url.Action("SelfHelp", "Portfolio")'>
     <div class="row fade-4 text-center bg-white rounded shadow-lg">
+
         <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
             Explore how my high school principles-first application for Wooster School in Danbury, CT helped to facilitate the Self-Help program, and
             see how the project has grown into an open source platform and educational project for students.
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
-            <a href='@Url.Action("SelfHelp", "Portfolio")'>
-                <img src="@Url.Content("~/imgs/SHLogo.png")" width="280" class="hoverable-sh" />
-            </a>
-            <div class="captions text-center">Self-Help Open Source Initiative</div>
+
+            <img class="img-fluid" src="@Url.Content("~/imgs/SHLogo.png")" height="300" />
+
+            <div class="captions text-center pt-1">Self-Help Open Source Initiative</div>
         </div>
+
     </div>
+</a>
 
-    <br />
+<br />
 
-    <div class="row fade-5 text-center bg-white rounded shadow-lg">
-        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
-            <a class="" href='@Url.Action("TicTacBoom", "Portfolio")'>
-                <img src="@Url.Content("~/imgs/TTB.png")" width="300" class="hoverable" />
-            </a>
-            <div class="captions text-center">Tic-Tac-Boom</div>
-        </div>
-        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-            A twist on two classics: Minesweeper and Tic-Tac-Toe. Come explore one of my first original games written in Java.
-        </div>
-    </div>
-
-    <br />
-
+<a class="blog-link" href='@Url.Action("Assembly", "Portfolio")'>
     <div class="row fade-6 text-center bg-white rounded shadow-lg">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+
+            <img class="img-fluid" src="@Url.Content("~/imgs/Assembly.png")" height="300" />
+
+            <div class="captions text-center pt-1">Assembly Code + Lecture</div>
+        </div>
         <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
             See my work with low-level MIPS assembly, interpreters, and fractals. Then witness how I transform my passion for code into a lecture for high school students.
         </div>
+
+    </div>
+</a>
+
+<br />
+
+<a class="blog-link" href='@Url.Action("TicTacBoom", "Portfolio")'>
+    <div class="row fade-5 text-center bg-white rounded shadow-lg">
+
+        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+            A twist on two classics: Minesweeper and Ultimate Tic-Tac-Toe. Come explore one of my first original games written in Java.
+        </div>
         <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
-            <a href='@Url.Action("Assembly", "Portfolio")'>
-                <img src="@Url.Content("~/imgs/Assembly.png")" width="300" class="hoverable" />
-            </a>
-            <div class="captions text-center">Tic-Tac-Boom</div>
+
+            <img class="img-fluid" src="@Url.Content("~/imgs/TTB.png")" height="300" />
+
+            <div class="captions text-center pt-1">Tic-Tac-Boom</div>
         </div>
-    </div>
-
-
-
-        <!--<div class="row justify-content-md-center p-1">
-
-            <div class="col-lg-auto fade-1">
-                
-            </div>
-            <div class="col-lg-auto fade-2">
-
-                <a href='@Url.Action("SelfHelp", "Portfolio")'>
-                    <img src="@Url.Content("~/imgs/SHLogo.png")" width="300" class="hoverable-sh"/>
-                </a>
-
-
-                <div class="captions">Self-Help<br />Open-Source Initiative</div>
-            </div>
-            <div class="col-lg-auto fade-3">
-                <a href='@Url.Action("FAA", "Portfolio")'>
-                    <img src="@Url.Content("~/imgs/FAAFlightSim.jpg")" height="300" class="hoverable" />
-                </a>
-
-                <div class="captions">FAA Collaborative Research</div>
-            </div>
-
-
-        </div>
-
-        <div class="row justify-content-md-center p-3">
-
-            <div class="col-lg-auto fade-4 mr-4">
-                <a href='@Url.Action("DASC", "Portfolio")'>
-                    <img src="@Url.Content("~/imgs/DascPresentation.png")" height="300" class="hoverable" />
-                </a>
-
-                <div class="captions">36th Digital Avionics<br />Systems Conference</div>
-            </div>
-            <div class="col-lg-auto fade-5">
-                <a href='@Url.Action("Assembly", "Portfolio")'>
-                    <img src="@Url.Content("~/imgs/Assembly.png")" height="300" class="hoverable" />
-                </a>
-
-                <div class="captions">Assembly Code</div>
-            </div>
-            <div class="col-lg-auto fade-6 ml-4">
-                <a href='@Url.Action("Derivative", "Portfolio")'>
-                    <img src="@Url.Content("~/imgs/Latex.png")" height="300" class="hoverable" />
-                </a>
-
-                <div class="captions">O(n) Multivariable <br /> Derivative Calculator Research</div>
-            </div>
-
-
-        </div>
-
-
-        <br /><br /><br />
-
-
-        Organization:
-
-        Articles
-        Presentations
-        Awards
-        Self-Help Open Source Initative/ guest lecture
-        Projects
-        Games
-
-
-        TOP: Links to fairfield article?
-
 
     </div>
+</a>
 
-            -->
+<br />
