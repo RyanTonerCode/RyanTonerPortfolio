@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "15 Puzzle";
+}
+
+<div class="text-center p-3">
+    <img class="img-responsive" src="@Url.Content("~/imgs/Fifteen.png")" width="500" />
+</div>
+
+<h1 class="display-4 text-center mt-3 mb-4">15-Puzzle Solver</h1>
+
+<div id="assembly" class="container text-justify pb-3">
+
+    <div class="assemdesc mt-3">
+
+        The 15 puzzle is a classic tile sliding game that became popular in the late 19th century.
+    </div>
+
+
+
+</div>
+
+
+<div class="text-center">
+
+
+    <h1 class="display-4 mt-4">15-Puzzle Lecture</h1>
+    <div>
+        I created this lecture as the final presentation for the course Artificial Intelligence instructed by Professor Haishuai Wang PhD. All information and diagrams presented are my own unless otherwise cited.
+    </div>
+    <object data="@Url.Content("~/docs/FifteenPuzzle.pdf")" type="application/pdf" height="600" width="950" style="border:1px solid #666CCC" title="Assembly Lecture" frameborder="1" scrolling="auto">
+        <h3 class="text-center"><a href="@Url.Content("~/docs/FifteenPuzzle.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></h3>
+    </object>
+
+</div>

@@ -274,6 +274,13 @@ hr {
     animation-delay: 1s;
 }
 
+.fade-7 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+    animation-delay: 1.2s;
+}
+
 
 .modal-lg {
     width: 900px;
