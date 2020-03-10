@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -47,7 +39,7 @@ namespace RyanTonerPortfolio
             if (reqProtocol != "https")
             {
                 var newUrl = new StringBuilder()
-                    .Append("https://wwww.").Append(request.Host)
+                    .Append("https://").Append(request.Host)
                     .Append(request.PathBase).Append(request.Path)
                     .Append(request.QueryString);
 
@@ -69,16 +61,18 @@ namespace RyanTonerPortfolio
         // This method gets called by the runtime. Use this method to add services to the container.
         public static void ConfigureServices(IServiceCollection services)
         {
+            /*
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            */
 
             services.AddMvc(option => option.EnableEndpointRouting = false);
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -95,17 +89,16 @@ namespace RyanTonerPortfolio
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+            //app.UseCookiePolicy();
 
             var options = new RewriteOptions()
              .AddRedirectToProxiedHttps()
              .AddRedirect("(.*)/$", "$1");  // remove trailing slash
 
+            app.UseRewriter(options);
 
             app.UseMvc(routes =>
             {
