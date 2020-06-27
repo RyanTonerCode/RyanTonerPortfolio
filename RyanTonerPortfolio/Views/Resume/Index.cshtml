@@ -2,13 +2,16 @@
     ViewData["Title"] = "Resume";
 }
 
-<div class="container-fluid text-center pl-0 pr-0">
+    <div class="container-fluid text-center pl-0 pr-0">
 
 
-    <img class="shadow-lg img-fluid p-0 m-0" src="@Url.Content("~/imgs/TonerResume.png")" width="1200"/>
+        <!--<img class="shadow-lg img-fluid p-0 m-0" src="@Url.Content("~/imgs/TonerResume.png")" width="1200"/>-->
 
-    <h3 class="m-3"><a href="@Url.Content("~/docs/TonerResume.pdf")" title="Ryan Toner Resume 2020" target="_blank" type="application/pdf">Click for PDF</a></h3>
+        <iframe src="@Url.Content("~/docs/TonerResume.pdf#zoom=120")" height="1200" width="1000" title="Toner Resume" frameBorder="0" scrolling="auto">
+        </iframe>
 
-    <br />
+        <h3 class="m-3"><a href="@Url.Content("~/docs/TonerResume.pdf")" title="Ryan Toner Resume 2020" target="_blank" type="application/pdf">Click for PDF</a></h3>
 
-</div>
+        <br />
+
+    </div>
