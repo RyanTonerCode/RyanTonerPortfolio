@@ -2,7 +2,7 @@
     ViewData["Title"] = "15 Puzzle";
 }
 
-<div class="text-center p-3">
+<div class="container text-center p-3">
     <img class="img-responsive" src="@Url.Content("~/imgs/Fifteen.png")" width="500" />
 </div>
 
@@ -11,16 +11,32 @@
 <div id="assembly" class="container text-justify pb-3">
 
     <div class="assemdesc mt-3">
+        The 15 puzzle is a classic tile sliding game that became popular in the late 19th century.
+        
+        It is a computationally difficult problem to solve because it is NP-Hard.
+        
+        Furthermore, solving the puzzle optimally is challenging because the puzzle has a large search space of possible moves.
 
-        The 15 puzzle is a classic tile sliding game that became popular in the late 19th century. It was of particular interest to me 
+        <br /> <br />
+
+        I wanted to apply machine learning to the puzzle to develop my own heuristic-algorithm. 
+        
+        I created my dataset by scrambling a solved board using breadth-first search, and labeling several hundred thousand boards with how many moves they are away from the solved sate.
+
+        This gave my neural network a notional idea of the search space, and allowed me to reasonably estimate how far a random valid board state is from being solved.
+
+        Consequently, I can then use my neural heuristic to guide an A* search to try to efficiently solve my board while minimizing moves.
+
+        I have developed my interest in pathfinding through creating many games that require efficient searching through graph-like structures.
+
+        I wanted to share this knowledge, so I developed a set of <a asp-controller="Portfolio" asp-action="Pathfinding">introductory lectures to pathfinding</a> for game designers, computer scientists, and inquisitive learners.
+
+
     </div>
-
-
 
 </div>
 
-
-<div class="text-center">
+<div class="container text-center">
 
 
     <h1 class="display-4 mt-4">15-Puzzle Lecture</h1>

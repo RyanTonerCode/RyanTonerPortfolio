@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Pathfinding";
+}
+
+<div class="container text-center p-3">
+    <img class="img-responsive" src="@Url.Content("~/imgs/Maze.png")" width="900" />
+</div>
+
+<h1 class="display-4 text-center mt-3 mb-4">An Introduction to Pathfinding</h1>
+
+<div id="assembly" class="container text-justify pb-3">
+
+    <div class="assemdesc mt-3">
+        I created these Pathfinding Lectures for game designers and computer scientists with an interest in understanding the underlying mechanics of graph traversal and search.
+        It may be helpful to students taking a Graph Theory course, or otherwise those similarly interested in discrete structures.
+
+        <br /><br />
+
+        In this tutorial and code, you will learn the following algorithms and their implementations
+        <ul class="list p-3">
+            <li>Breadth-First Search</li>
+            <li>Depth-First Search</li>
+            <li>Dijkstra's Algorithm (uniform-cost search)</li>
+            <li>Greed best-first Search</li>
+            <li>A* Search</li>
+        </ul>
+
+        To motivate the learner, several demo applications are provided.
+        <ul class="list p-3">
+            <li>Stack vs Queue Demonstration</li>
+            <li>Graph construction, unweighted pathfinding, and backtracking</li>
+            <li>Weighted Graph construction and finding the minimum path with Dijkstra's algorithm</li>
+            <li>Mazes and pathfinding - DFS vs. Dijkstra vs. A*</li>
+            <li>Implementation of the 8-puzzle and solving using A* or greedy best-first.</li>
+        </ul>
+
+        Additionally, I have created a <a asp-controller="Portfolio" asp-action="FifteenPuzzle> 15-Puzzle solver</a> using Machine Learning and A*, which builds on the work presented here.
+
+        I have used these lectures to successfully teach a motivated high-school student to obtain an operative understanding of the material, but I would consider this to be college-level.
+
+        <br /><br />
+        The accompanying code can be found in this <a target="_blank" href="https://github.com/RyanTonerCode/Pathfinding-Tutorial" rel="noreferrer">GitHub Repository</a>.
+    </div>
+
+</div>
+
+<div class="container text-center">
+
+
+    <h1 class="display-4 mt-4">Introduction to Pathfinding: DFS and BFS</h1>
+    <div>
+    </div>
+
+    <iframe src="@Url.Content("~/docs/Pathfinding1.pdf")" height="650" width="100%" style="border:1px solid #666CCC" title="Assembly Lecture" frameborder="1" scrolling="auto">
+        <h3 class="text-center"><a href="@Url.Content("~/docs/Pathfinding1.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></h3>
+    </iframe>
+
+    <h1 class="display-4 mt-4">Introduction to Pathfinding: Dijkstra's Algorithm</h1>
+    <div>
+    </div>
+
+    <object data="@Url.Content("~/docs/Pathfinding2.pdf")" type="application/pdf" height="650" width="100%" style="border:1px solid #666CCC" title="Assembly Lecture" frameborder="1" scrolling="auto">
+        <h3 class="text-center"><a href="@Url.Content("~/docs/Pathfinding2.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></h3>
+    </object>
+
+    <h1 class="display-4 mt-4">Introduction to Pathfinding: Greedy Best-First and A* Search</h1>
+    <div>
+    </div>
+
+    <object data="@Url.Content("~/docs/Pathfinding3.pdf")" type="application/pdf" height="650" width="100%" style="border:1px solid #666CCC" title="Assembly Lecture" frameborder="1" scrolling="auto">
+        <h3 class="text-center"><a href="@Url.Content("~/docs/Pathfinding3.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></h3>
+    </object>
+
+
+
+</div>

@@ -2,127 +2,149 @@
     ViewData["Title"] = "Portfolio";
 }
 
-<div class="container-fluid justify-content-md-center p-3">
-    <a class="blog-link" href='@Url.Action("DASC", "Portfolio")'>
-        <div class="row fade-1 text-center bg-white rounded shadow-lg">
-            <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+    <div class="container">
 
-                <img class="img-fluid" src="@Url.Content("~/imgs/DascPresentation.png")" height="300" />
+        <div class="container-fluid justify-content-md-center p-3">
+            <a class="blog-link" href='@Url.Action("DASC", "Portfolio")'>
+                <div class="row fade-1 text-center bg-white rounded shadow-lg">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
 
-                <div class="captions text-center pt-1">DASC 2017</div>
+                        <img class="img-fluid" src="@Url.Content("~/imgs/DascPresentation.jpg")" height="300" />
+
+                        <div class="captions text-center pt-1">DASC 2017</div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                        Digital Avionics Systems Conference presenter for <u>Aircraft Conflict Resolution Cataloguer</u>. St. Petersburg, FL September 2017.
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <br />
+
+        <a class="blog-link" href='@Url.Action("FAA", "Portfolio")'>
+            <div class="row fade-2 text-center bg-white rounded shadow-lg">
+
+                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                    Collaborative Research and Development with the Federal Aviation Administration solving algorithm to reverse engineer aircraft conflict resolutions.
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+
+                    <img class="img-fluid" src="@Url.Content("~/imgs/FAAFlightSim.jpg")" height="300" />
+
+                    <div class="captions text-center pt-1">FAA Research</div>
+                </div>
+
             </div>
-            <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-                Digital Avionics Systems Conference presenter for <u>Aircraft Conflict Resolution Cataloguer</u>. St. Petersburg, FL September 2017.
+        </a>
+
+        <br />
+        <a class="blog-link" href='@Url.Action("FifteenPuzzle", "Portfolio")'>
+            <div class="row fade-3 text-center bg-white rounded shadow-lg">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+
+                    <img class="img-fluid" src="@Url.Content("~/imgs/Fifteen.png")" height="300" />
+
+                    <div class="captions text-center pt-1">Fifteen Puzzle Solver</div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                    Solving the classic 15-Puzzle Game using Machine Learning (TensorFlow and Keras) and A* Pathfinding.
+                </div>
+
             </div>
-        </div>
-    </a>
-</div>
+        </a>
 
-<br />
+        <br />
+        <a class="blog-link" href='@Url.Action("Derivative", "Portfolio")'>
+            <div class="row fade-4 text-center bg-white rounded shadow-lg">
 
-<a class="blog-link" href='@Url.Action("FAA", "Portfolio")'>
-    <div class="row fade-2 text-center bg-white rounded shadow-lg">
+                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                    Learn more about my research creating an original algorithm solving multivariable symbolic differentiation in O(n) time.
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
 
-        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-            Collaborative Research and Development with the Federal Aviation Administration solving algorithm to reverse engineer aircraft conflict resolutions.
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+                    <img class="img-fluid" src="@Url.Content("~/imgs/Latex.png")" height="300" />
 
-            <img class="img-fluid" src="@Url.Content("~/imgs/FAAFlightSim.jpg")" height="300" />
+                    <div class="captions text-center pt-1">Derivative Calculator</div>
+                </div>
 
-            <div class="captions text-center pt-1">FAA Research</div>
-        </div>
+            </div>
+        </a>
 
-    </div>
-</a>
+        <br />
 
-<br />
-<a class="blog-link" href='@Url.Action("FifteenPuzzle", "Portfolio")'>
-    <div class="row fade-3 text-center bg-white rounded shadow-lg">
+        <a class="blog-link" href='@Url.Action("SelfHelp", "Portfolio")'>
+            <div class="row fade-5 text-center bg-white rounded shadow-lg">
 
-        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
 
-            <img class="img-fluid" src="@Url.Content("~/imgs/Fifteen.png")" height="300" />
+                    <img class="img-fluid" src="@Url.Content("~/imgs/SHLogo.png")" height="300" />
 
-            <div class="captions text-center pt-1">Fifteen Puzzle Solver</div>
-        </div>
-        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-            Solving the classic 15-Puzzle Game using Machine Learning (TensorFlow and Keras) and A* Pathfinding.
-        </div>
+                    <div class="captions text-center pt-1">Self-Help Open Source Initiative</div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                    Explore how my high school principles-first application for Wooster School in Danbury, CT helped to facilitate the Self-Help program, and
+                    see how the project has grown into an open source platform and educational project for students.
+                </div>
 
-    </div>
-</a>
+            </div>
+        </a>
 
-<br />
-<a class="blog-link" href='@Url.Action("Derivative", "Portfolio")'>
-    <div class="row fade-4 text-center bg-white rounded shadow-lg">
+        <br />
 
-        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-            Learn more about my research creating an original algorithm solving multivariable symbolic differentiation in O(n) time.
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+        <a class="blog-link" href='@Url.Action("Assembly", "Portfolio")'>
+            <div class="row fade-6 text-center bg-white rounded shadow-lg">
 
-            <img class="img-fluid" src="@Url.Content("~/imgs/Latex.png")" height="300" />
+                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                    See my work with low-level MIPS assembly, interpreters, and fractals. Then witness how I transform my passion for code into a lecture for high school students.
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
 
-            <div class="captions text-center pt-1">Derivative Calculator</div>
-        </div>
+                    <img class="img-fluid" src="@Url.Content("~/imgs/Assembly.png")" height="300" />
 
-    </div>
-</a>
+                    <div class="captions text-center pt-1">Assembly Code + Lecture</div>
+                </div>
 
-<br />
+            </div>
+        </a>
 
-<a class="blog-link" href='@Url.Action("SelfHelp", "Portfolio")'>
-    <div class="row fade-5 text-center bg-white rounded shadow-lg">
+        <br />
 
-        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+        <a class="blog-link" href='@Url.Action("TicTacBoom", "Portfolio")'>
+            <div class="row fade-7 text-center bg-white rounded shadow-lg">
 
-            <img class="img-fluid" src="@Url.Content("~/imgs/SHLogo.png")" height="300" />
+                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
 
-            <div class="captions text-center pt-1">Self-Help Open Source Initiative</div>
-        </div>
-        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-            Explore how my high school principles-first application for Wooster School in Danbury, CT helped to facilitate the Self-Help program, and
-            see how the project has grown into an open source platform and educational project for students.
-        </div>
+                    <img class="img-fluid" src="@Url.Content("~/imgs/TTB.png")" height="300" />
 
-    </div>
-</a>
+                    <div class="captions text-center pt-1">Tic-Tac-Boom</div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                    A twist on two classics: Minesweeper and Ultimate Tic-Tac-Toe. Come explore one of my first original games written in Java.
+                </div>
 
-<br />
+            </div>
+        </a>
 
-<a class="blog-link" href='@Url.Action("Assembly", "Portfolio")'>
-    <div class="row fade-6 text-center bg-white rounded shadow-lg">
+        <br />
 
-        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-            See my work with low-level MIPS assembly, interpreters, and fractals. Then witness how I transform my passion for code into a lecture for high school students.
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
+        <a class="blog-link" href='@Url.Action("Pathfinding", "Portfolio")'>
+            <div class="row fade-6 text-center bg-white rounded shadow-lg">
 
-            <img class="img-fluid" src="@Url.Content("~/imgs/Assembly.png")" height="300" />
+                <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
+                    Learn about the basics of Pathfinding and Graph Theory through my 3-part introductory lecture series!
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
 
-            <div class="captions text-center pt-1">Assembly Code + Lecture</div>
-        </div>
+                    <img class="img-fluid" src="@Url.Content("~/imgs/Pathfinding.png")" height="300" />
 
-    </div>
-</a>
+                    <div class="captions text-center pt-1">Pathfindings Lectures</div>
+                </div>
 
-<br />
+            </div>
+        </a>
 
-<a class="blog-link" href='@Url.Action("TicTacBoom", "Portfolio")'>
-    <div class="row fade-7 text-center bg-white rounded shadow-lg">
-
-        <div class="col-lg-4 col-md-6 col-sm-12 p-lg-3 mx-auto bg-secondary">
-
-            <img class="img-fluid" src="@Url.Content("~/imgs/TTB.png")" height="300" />
-
-            <div class="captions text-center pt-1">Tic-Tac-Boom</div>
-        </div>
-        <div class="col-lg-8 col-md-6 col-sm-12 p-4 blurb">
-            A twist on two classics: Minesweeper and Ultimate Tic-Tac-Toe. Come explore one of my first original games written in Java.
-        </div>
+        <br />
 
     </div>
-</a>
-
-<br />
