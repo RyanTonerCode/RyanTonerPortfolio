@@ -228,8 +228,8 @@ hr {
     transform: scale(1.5);
 }
 
-.fade-1:hover, .fade-2:hover, .fade-3:hover, .fade-4:hover, .fade-5:hover, .fade-6:hover, .fade-7:hover{
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.fade-1:hover, .fade-2:hover, .fade-3:hover, .fade-4:hover, .fade-5:hover, .fade-6:hover, .fade-7:hover, .fade-8:hover{
+    transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -279,6 +279,13 @@ hr {
     animation: light-fader linear forwards;
     animation-duration: 1.5s;
     animation-delay: 1.2s;
+}
+
+.fade-8 {
+    opacity: 0;
+    animation: light-fader linear forwards;
+    animation-duration: 1.5s;
+    animation-delay: 1.4s;
 }
 
 
