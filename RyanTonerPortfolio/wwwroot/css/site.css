@@ -293,3 +293,7 @@ hr {
     width: 900px;
     height: 900px; /* control height here */
 }
+
+object{
+    width: 100%;
+}

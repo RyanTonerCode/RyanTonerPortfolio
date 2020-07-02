@@ -2,101 +2,99 @@
     ViewData["Title"] = "Assembly";
 }
 
-    <div class="container">
+<div class="container">
 
-        <div class="text-center p-3">
-            <img class="img-responsive" src="@Url.Content("~/imgs/interpreter.png")" width="500" />
+    <div class="text-center p-3">
+        <img class="img-responsive" src="@Url.Content("~/imgs/interpreter.png")" width="550" />
+    </div>
+
+    <h1 class="display-4 text-center mt-3 mb-4">Assembly Code, MIPS Interpreter, and Fractals</h1>
+
+    <div id="assembly" class="container text-justify pb-3">
+
+        <div class="assemdesc mt-3">
+
+            Although the majority of the code I write uses high-level languages, I have come to enjoy working at the assembly level.
+
+            I was the project leader and system designer for a MIPS Execution and Pipeline simulator for a Computer Organization course.
+
+            In this role, I broke the interpreter into a procedural algorithm that read the 32-bit MIPS instruction set and executed it on a simulated architecture in C++.
+
+            This particular algorithm at the high level design took MIPS code, placed it onto the pipeline, parsed the instructions, checked for data and control hazards, and finally executed the result all corresponding to the simulated RISC pipeline.
+
+            I took the initiative to walk the team through the system design and delegate roles and tasks to optimize our workload. I created and managed a <a href="https://github.com/RyanTonerCode/CompOrgMipsSimulatorFinalProject" target="_blank" rel="noreferrer">GitHub</a> repository for this project which you can explore.
+
+            To take this project further, I also created a separate tree in which I simulated the system call operations in assembly.
         </div>
 
-        <h1 class="display-4 text-center mt-3 mb-4">Assembly Code, MIPS Interpreter, and Fractals</h1>
+        <br />
+        <hr />
+        <br />
 
-        <div id="assembly" class="container text-justify pb-3">
+        <div class="container text-justify">
 
-            <div class="assemdesc mt-3">
 
-                Although the majority of the code I write uses high-level languages, I have come to enjoy working at the assembly level.
-
-                I was the project leader and system designer for a MIPS Execution and Pipeline simulator for a Computer Organization course.
-
-                In this role, I broke the interpreter into a procedural algorithm that read the 32-bit MIPS instruction set and executed it on a simulated architecture in C++.
-
-                This particular algorithm at the high level design took MIPS code, placed it onto the pipeline, parsed the instructions, checked for data and control hazards, and finally executed the result all corresponding to the simulated RISC pipeline.
-
-                I took the initiative to walk the team through the system design and delegate roles and tasks to optimize our workload. I created and managed a <a href="https://github.com/RyanTonerCode/CompOrgMipsSimulatorFinalProject" target="_blank" rel="noreferrer">GitHub</a> repository for this project which you can explore.
-
-                To take this project further, I also created a separate tree in which I simulated the system call operations in assembly.
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img class="img-fluid" src="@Url.Content("~/imgs/triangle.png")" height="550" />
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    One assembly challenge I wanted to explore was efficient fractal generation only using assembly.
+                    I chose a relatively simply fractal called the Sierpinski Triangle, and made it dynamic with a depth-of-recursion variable.
+                    For the purposes of showing the fractal, I am using system print calls which is the least efficient operation.
+                    I used Stephen Wolfram's work on cellular automatons, and specifically coded rule 90 to iteratively generate the fractal.
+                    The source code can be found on <a href="https://github.com/RyanTonerCode/MipsSierpinski/blob/master/Sierpinski.s" target="_blank" rel="noreferrer">GitHub</a>.
+                </div>
             </div>
+
 
             <br />
             <hr />
             <br />
 
-            <div class="container text-justify">
+        </div>
 
+        <div class="assemdesc p-0 text-justify">
 
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <img class="img-fluid" src="@Url.Content("~/imgs/triangle.png")" height="550" />
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        One assembly challenge I wanted to explore was efficient fractal generation only using assembly.
-                        I chose a relatively simply fractal called the Sierpinski Triangle, and made it dynamic with a depth-of-recursion variable.
-                        For the purposes of showing the fractal, I am using system print calls which is the least efficient operation.
-                        I used Stephen Wolfram's work on cellular automatons, and specifically coded rule 90 to iteratively generate the fractal.
-                        The source code can be found on <a href="https://github.com/RyanTonerCode/MipsSierpinski/blob/master/Sierpinski.s" target="_blank" rel="noreferrer">GitHub</a>.
-                    </div>
-                </div>
-
-
-                <br />
-                <hr />
-                <br />
-
-            </div>
-
-            <div class="assemdesc p-0 text-justify">
-
-                Since I found working on assembly highly rewarding, I undertook the challenge of teaching high school students an operative understanding and writing their own assembly code in only 2 weeks. This was quite the endeavor to say the least.
-                Here are a few sample components of the original lectures, problems, and resources I produced and delivered to the students. Much of the lecturing was done interactively, especially demoing the usage of the QtSpim simulator.
-
-            </div>
-
-            <div class="container text-center">
-
-                <h1 class="display-4 mt-4">Assembly Lecture</h1>
-                <div>
-                    I created this lecture as the introductory content for the class. All information and diagrams presented are my own unless otherwise cited.
-                </div>
-                <object data="@Url.Content("~/docs/AssemblyLecture.pdf")" type="application/pdf" height="600" width="950" style="border:1px solid #666CCC" title="Assembly Lecture" frameborder="1" scrolling="auto">
-                    <h3 class="text-center"><a href="@Url.Content("~/docs/AssemblyLecture.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></h3>
-                </object>
-
-                <br />
-
-                <h1 class="display-4">In-Depth Bitwise Operations</h1>
-                <div>
-                    I produced this mini-lesson to clarify one of my lab problems along with more binary fundamentals like two's complement. I wanted to illustrate in detail the way
-                    binary manipulation has analogs to base 10, and show some examples and basic proofs for the validity of using two's complement for subtraction.
-                </div>
-                <object data="@Url.Content("~/docs/BitExploration.pdf")" type="application/pdf" height="1050" width="950" style="border:1px solid #666CCC" title="Bit Exploration" frameborder="1" scrolling="auto">
-                    <h3 class="text-center"><a href="@Url.Content("~/docs/BitExploration.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></h3>
-                </object>
-
-                <br />
-
-                <h1 class="display-4 ">Reverse Engineering Challenge</h1>
-                <div>
-                    Since one student was excelling in understanding the content of the lessons and assembly problem-solving, I developed this reverse-engineering challenge for
-                    him to relate some of these low-level principles to the high level code. To solve this problem, this student had to undo a text cipher and series of bitwise
-                    obfuscations to reveal what the original string data contained prior to being manipulated.
-                </div>
-                <object data="@Url.Content("~/docs/AssemblyChallenge.pdf")" type="application/pdf" height="1200" width="950" style="border:1px solid #666CCC" title="Reverse Engineering" frameborder="1" scrolling="auto">
-                    <h3 class="text-center"><a href="@Url.Content("~/docs/AssemblyChallenge.pdf")" target="_blank" type="application/pdf">Please click to open here.</a></h3>
-                </object>
-
-            </div>
-
+            Since I found working on assembly highly rewarding, I undertook the challenge of teaching high school students an operative understanding and writing their own assembly code in only 2 weeks. This was quite the endeavor to say the least.
+            Here are a few sample components of the original lectures, problems, and resources I produced and delivered to the students. Much of the lecturing was done interactively, especially demoing the usage of the QtSpim simulator.
 
         </div>
+
+        <div class="container text-center">
+
+            <a href="@Url.Content("~/docs/AssemblyLecture.pdf")" target="_blank" type="application/pdf">
+                <h3 class="display-4 mt-4">Assembly Lecture</h3>
+            </a>
+            <div>
+                I created this lecture as the introductory content for the class. All information and diagrams presented are my own unless otherwise cited.
+            </div>
+            <object data="@Url.Content("~/docs/AssemblyLecture.pdf")" type="application/pdf" height="650" style="border:1px solid #666CCC" title="Assembly Lecture" frameborder="1" scrolling="auto"></object>
+            <br /><br />
+
+            <a href="@Url.Content("~/docs/BitExploration.pdf")" target="_blank" type="application/pdf">
+                <h3 class="display-4">In-Depth Bitwise Operations</h3>
+            </a>
+            <div>
+                I produced this mini-lesson to clarify one of my lab problems along with more binary fundamentals like two's complement. I wanted to illustrate in detail the way
+                binary manipulation has analogs to base 10, and show some examples and basic proofs for the validity of using two's complement for subtraction.
+            </div>
+            <object data="@Url.Content("~/docs/BitExploration.pdf")" type="application/pdf" height="1050" style="border:1px solid #666CCC" title="Bit Exploration" frameborder="1" scrolling="auto"></object>
+            <br /><br />
+
+            <a href="@Url.Content("~/docs/AssemblyChallenge.pdf")" target="_blank" type="application/pdf">
+                <h3 class="display-4 ">Reverse Engineering Challenge</h3>
+            </a>
+            <div>
+                Since one student was excelling in understanding the content of the lessons and assembly problem-solving, I developed this reverse-engineering challenge for
+                him to relate some of these low-level principles to the high level code. To solve this problem, this student had to undo a text cipher and series of bitwise
+                obfuscations to reveal what the original string data contained prior to being manipulated.
+            </div>
+            <object data="@Url.Content("~/docs/AssemblyChallenge.pdf")" type="application/pdf" height="1200" style="border:1px solid #666CCC" title="Reverse Engineering" frameborder="1" scrolling="auto"></object>
+
+        </div>
+
+
+    </div>
 
 </div>
