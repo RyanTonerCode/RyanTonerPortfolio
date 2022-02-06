@@ -1,24 +1,25 @@
 ﻿{
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:50793",
-      "sslPort": 44330
+      "applicationUrl": "http://localhost:35526",
+      "sslPort": 44352
     }
   },
   "profiles": {
-    "IIS Express": {
-      "commandName": "IISExpress",
+    "RyanTonerPortfolio": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
       "launchBrowser": true,
+      "applicationUrl": "https://localhost:7160;http://localhost:5160",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "RyanTonerPortfolio": {
-      "commandName": "Project",
+    "IIS Express": {
+      "commandName": "IISExpress",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

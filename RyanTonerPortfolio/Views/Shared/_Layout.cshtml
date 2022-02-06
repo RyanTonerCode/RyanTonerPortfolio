@@ -8,17 +8,7 @@
     <meta name="author" content="Ryan Toner">
     <title>@ViewData["Title"] - Ryan Toner Portfolio</title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-              integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
-              crossorigin="anonymous"
-        asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-        asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
-        />
-    </environment>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" />
@@ -28,7 +18,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 navbar-custom">
                 <div class="container"> 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -41,17 +31,16 @@
                                 <a class="nav-link pl-3 pr-3" asp-controller="Resume" asp-action="Index">Resume</a>
                             </li>
 
-                            <li class="nav-item dropdown ml-0 pl-0">
+                            <li class="nav-item ml-0 pl-0">
                                 <div class="row pl-3 pr-3">
-                                    <div class="btn-group dropright">
+                                    <div class="dropdown btn-group">
                                         <a class="nav-link"
                                            asp-controller="Portfolio" asp-action="Index">Portfolio
                                         </a>
-                                        <button type="button" class="btn bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="sr-only">Toggle Dropright</span>
+                                        <button type="button" class="btn bg-white dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                            <span class="visually-hidden">Portfolio Dropright</span>
                                         </button>
                                         <ul class="dropdown-menu">
-
                                             <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="DASC">36th Digital Avionics Systems Conference</a></li>
                                             <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="FAA">FAA Collaborative Research</a></li>
                                             <li class="nav-item"><a class="dropdown-item nav-link" asp-controller="Portfolio" asp-action="FifteenPuzzle">Solving the 15 Puzzle with Machine Learning</a></li>
@@ -96,42 +85,34 @@
         </div>
     </footer>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI">
-        </script>
-    </environment>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous">
+    </script>
 
     <script type="text/javascript">
 
         $(document).ready(function () {
             var url = window.location.pathname;
 
-            var t = document.getElementsByClassName("nav-link");
-            for (var i = 0; i < t.length; i++) {
-
-                if (t[i].getAttribute("href") === url)
-                    t[i].classList.add("active");
+            var nl = document.getElementsByClassName("nav-link");
+            for (var i = 0; i < nl.length; i++) {
+                if (nl[i].getAttribute("href") === url)
+                    nl[i].classList.add("active");
                 else
-                    t[i].classList.remove("active");
+                    nl[i].classList.remove("active");
             }
         });
 
     </script>
 
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>

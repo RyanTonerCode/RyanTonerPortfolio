@@ -1,7 +1,7 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-#mainphoto{
+#mainphoto {
     border-radius: 50%;
     border: 3px solid lightblue;
 }
@@ -15,12 +15,12 @@ for details on configuring this project to bundle and minify static web assets. 
     animation-delay: .1s;
 }
 
-.blog-link, .blog-link:hover{
+.blog-link, .blog-link:hover {
     text-decoration: none;
 }
 
-.about{
-    line-height:  160% !important;
+.about {
+    line-height: 160% !important;
 }
 
 @-webkit-keyframes slide {
@@ -53,17 +53,17 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 
-.navbar li a{
+.navbar li a {
     color: black !important;
     font-size: 28px !important;
 }
 
-.navbar li a:hover {
-    color: white !important;
-    text-decoration: underline !important;
-    background-color: #007BFF;
-    border-radius: 10px;
-}
+    .navbar li a:hover {
+        color: white !important;
+        text-decoration: underline !important;
+        background-color: #007BFF;
+        border-radius: 10px;
+    }
 
 .links {
     font-family: 'Montserrat', sans-serif;
@@ -75,21 +75,23 @@ for details on configuring this project to bundle and minify static web assets. 
 html {
     font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 /* Sticky footer styles
@@ -135,7 +137,7 @@ container {
     line-height: 50px;
 }
 
-.footer{
+.footer {
     font-size: 25px;
 }
 
@@ -143,7 +145,7 @@ hr {
     border: .5px solid black;
 }
 
-#uni_names{
+#uni_names {
     font-size: 35px;
     padding-top: 20px;
 }
@@ -163,10 +165,10 @@ hr {
     background-color: lightblue;
 }
 
-.hoverable:hover, .hoverable-sh:hover {
-    opacity: 1;
-    cursor: pointer;
-}
+    .hoverable:hover, .hoverable-sh:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
 
 .padding-0 {
     padding-right: 0;
@@ -228,7 +230,7 @@ hr {
     transform: scale(1.5);
 }
 
-.fade-1:hover, .fade-2:hover, .fade-3:hover, .fade-4:hover, .fade-5:hover, .fade-6:hover, .fade-7:hover, .fade-8:hover{
+.fade-1:hover, .fade-2:hover, .fade-3:hover, .fade-4:hover, .fade-5:hover, .fade-6:hover, .fade-7:hover, .fade-8:hover {
     transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -294,6 +296,6 @@ hr {
     height: 900px; /* control height here */
 }
 
-object{
+object {
     width: 100%;
 }
