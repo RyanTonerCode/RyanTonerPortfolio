@@ -10,6 +10,7 @@
 *.userosscache
 *.sln.docstates
 *.mp4
+aws-beanstalk-tools-defaults.json
 
 MoonlightSonata.mp4
 videos
